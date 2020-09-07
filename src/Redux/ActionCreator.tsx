@@ -24,8 +24,7 @@ export const reset = (): AddAndSubtract => {
 export const getUserInput = (
   event: React.ChangeEvent<HTMLInputElement>
 ): GetUserInput => {
-  const value = parseInt(event.target.value);
-  return { type: "GET_USER_INPUT", value: value };
+  return { type: "GET_USER_INPUT", value: event };
 };
 
 export const multiply = (): Calculation => {

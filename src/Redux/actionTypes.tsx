@@ -9,10 +9,10 @@ export type AddAndSubtract = {
 
 export type GetUserInput = {
   type: string;
-  value: number;
+  value: React.ChangeEvent<HTMLInputElement>;
 };
 
 export type DispatchActions = {
   type: string;
-  value: number;
+  value: number | React.ChangeEvent<HTMLInputElement>;
 };

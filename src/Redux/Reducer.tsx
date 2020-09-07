@@ -26,8 +26,9 @@ export const rootReducer = (
     case "RESET":
       return { ...state, count: action.value as number };
     case "GET_USER_INPUT":
-      console.log(action.value);
-      return { ...state, userInput: action.value };
+      const event = action.value as React.ChangeEvent<HTMLInputElement>;
+      const value = parseInt(event.target.value);
+      return { ...state, userInput: value };
     case "MULTIPLY":
       return {
         ...state,
