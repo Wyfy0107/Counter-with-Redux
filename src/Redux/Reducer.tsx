@@ -32,7 +32,7 @@ export const rootReducer = (
     case "MULTIPLY":
       return {
         ...state,
-        count: state.count * state.userInput,
+        count: state.count + state.userInput,
       };
     default:
       return state;
