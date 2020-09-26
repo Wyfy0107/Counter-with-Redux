@@ -49,7 +49,6 @@ type AppProps = {
 function App(props: AppProps) {
   return (
     <div>
-      <h1>hello</h1>
       <DisplayWrapper>{props.count}</DisplayWrapper>
       <br />
 
